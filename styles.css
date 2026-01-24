@@ -446,14 +446,14 @@ a {
     line-height: 1.8;
 }
 
-.contact-info a {
+.contact-info a:not(.linkedin-link) {
     color: var(--accent-color);
     text-decoration: none;
     transition: all 0.3s ease;
     border-bottom: 1px solid transparent;
 }
 
-.contact-info a:hover {
+.contact-info a:not(.linkedin-link):hover {
     color: var(--accent-hover);
     border-bottom-color: var(--accent-hover);
 }
@@ -465,10 +465,12 @@ a {
     color: var(--accent-color);
     text-decoration: none;
     margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 0.875rem 2rem;
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color) !important;
+    border-bottom: 2px solid var(--accent-color) !important;
     border-radius: 10px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.02em;
@@ -479,7 +481,8 @@ a {
     color: var(--white);
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
-    border-color: var(--accent-color);
+    border-color: var(--accent-color) !important;
+    border-bottom-color: var(--accent-color) !important;
 }
 
 .linkedin-icon {
