@@ -384,18 +384,18 @@ a {
 
 .headshot {
     width: 100%;
-    border-radius: 20px;
+    max-width: 350px;
+    border-radius: 50%;
     box-shadow: var(--shadow-xl);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid var(--border-color);
     object-fit: cover;
     aspect-ratio: 1;
+    display: block;
 }
 
 .headshot:hover {
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 32px 96px rgba(59, 130, 246, 0.25);
-    border-color: var(--accent-color);
 }
 
 .about-content {
@@ -995,7 +995,7 @@ footer p {
     }
 
     .headshot {
-        max-width: 320px;
+        max-width: 280px;
         margin: 0 auto;
     }
 
